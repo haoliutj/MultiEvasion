@@ -11,3 +11,4 @@
 ##exclude temporarily
 /src/**
 /attacks/**
+.DS_Store
