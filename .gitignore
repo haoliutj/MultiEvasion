@@ -1,0 +1,15 @@
+## exlcude mac os file
+.DS_Store
+
+## exclude folder
+/data/**
+/result/**
+/torchattacks/**
+/secml_malware/**
+/test/**
+/log/**
+/.idea/**
+
+##exclude temporarily, will release after paper published
+/src/**
+/attacks/**
