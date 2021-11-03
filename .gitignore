@@ -12,3 +12,4 @@
 /src/**
 /attacks/**
 .DS_Store
+/.idea/**
