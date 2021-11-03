@@ -1,0 +1,10 @@
+## exclude folder
+/data/**
+/result/**
+/torchattacks/**
+/secml_malware/**
+/test/**
+
+##exclude temporarily
+/src/**
+/attacks/**

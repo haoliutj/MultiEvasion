@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="uc_sec@10.63.7.147:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="uc_sec@10.63.7.147:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/uc_sec/h_dir/advMalware_sync" local="$PROJECT_DIR$" />
+            <mapping deploy="" local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
