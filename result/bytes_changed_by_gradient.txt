@@ -1,5 +1,0 @@
-4154 of bytes crafted in total.
-653 of bytes changed by gradients optimized values.
-3501 of bytes crafted by benign contents (or random bytes).
-
-
