@@ -1,3 +1,6 @@
+## exlcude mac os file
+.DS_Store
+
 ## exclude folder
 /data/**
 /result/**
