@@ -7,9 +7,9 @@
 /torchattacks/**
 /secml_malware/**
 /test/**
+/log/**
+/.idea/**
 
-##exclude temporarily
+##exclude temporarily, will release after paper published
 /src/**
 /attacks/**
-.DS_Store
-/.idea/**
