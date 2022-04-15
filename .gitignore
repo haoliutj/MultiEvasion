@@ -9,7 +9,7 @@
 /test/**
 /log/**
 /.idea/**
-/checkpoint/**
+/:!checkpoint/*
 /backup/**
 /config/**
 /src/android/**
