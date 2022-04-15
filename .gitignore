@@ -9,6 +9,15 @@
 /test/**
 /log/**
 /.idea/**
+/checkpoint/**
+/backup/**
+/config/**
+/src/android/**
+/src/debug_script/**
+/attacks/attckbox/temp/**
+
+## exclude file
+.sh
 
 ##exclude temporarily, will release after paper published
 #/src/**
