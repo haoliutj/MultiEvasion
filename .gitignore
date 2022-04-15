@@ -17,7 +17,7 @@
 /attacks/attckbox/temp/**
 
 ## exclude file
-.sh
+*.sh
 
 ##exclude temporarily, will release after paper published
 #/src/**
