@@ -1,0 +1,2 @@
+##
+python train_avastnet.py --model_name=AvastNet --input_size=204800 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_204800/train_log.txt --checkpoint_dir=../checkpoint/inputsize_204800/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/

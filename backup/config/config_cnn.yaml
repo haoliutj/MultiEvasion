@@ -1,0 +1,21 @@
+example: 'malcov'
+
+### Data path
+train_data_path: '../data/all_file/'                    # Training data
+train_label_path: '../data/train_data_label.csv' # Training label
+valid_data_path: '../data/all_file/'                    # Validation Data
+valid_label_path: '../data/val_data_label.csv' # Validation Label
+
+
+
+### output path
+log_dir: '../log/'
+checkpoint_dir: '../checkpoint/'
+
+### Parameter
+use_cpu: 1                # Number of cores to use for data loader
+lr: 0.0001                # learning rate
+epochs: 50            # Number of steps to train
+batch_size: 16            #
+first_n_byte: 5000     # First N bytes of a PE file as the input of MalConv (defualt: 2 million)
+window_size: 500          # Kernel size & stride for fireeye

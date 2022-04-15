@@ -1,0 +1,8 @@
+Two Models True, Acc against adv_x (at least one detector predicted as malware): 0.8272251308900523
+False Positive: 33, which evade detectors successfully. (191 test samples in total)
+Model1: 0.806282722513089 accuracy for detecting adversarial malware. FP: 37 number of adv_x evade successfully.
+Model2: 0.03664921465968586 accuracy for detecting adversarial malware. FP: 184 number of adv_x evade successfully.
+average perturbation overhead: 0.9947916666666666 bytes.
+191 out of 192 PE files used as testing files (to evade detectors).
+1 files that can not processed/identified as PE binary. Filter out!
+test time: 45m 21s.
