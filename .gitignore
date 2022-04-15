@@ -9,12 +9,12 @@
 /test/**
 /log/**
 /.idea/**
-/:!checkpoint/*
-/backup/**
-/config/**
-/src/android/**
-/src/debug_script/**
-/attacks/attckbox/temp/**
+**/checkpoint
+**/backup
+**/config
+**/android
+**/debug_script
+**/temp
 
 ## exclude file
 *.sh
