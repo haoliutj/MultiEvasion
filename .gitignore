@@ -15,6 +15,7 @@
 **/android
 **/debug_script
 **/temp
+**/__pycache__
 
 ## exclude file
 *.sh
