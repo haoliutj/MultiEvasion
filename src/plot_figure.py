@@ -33,7 +33,7 @@ def initiation_performance(data=None,outputpath:str=None):
              fillstyle='none', markersize=marker_size, label='Benign Initiation')
     plt.plot(data['payload_size'], data['random'], color='blue', marker='^', linestyle='--', linewidth=2, markeredgewidth=2,
              fillstyle='none', markersize=marker_size, label='Random Initiation')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     plt.tick_params(labelsize=font_size)
@@ -127,7 +127,7 @@ def different_adversary_strength(data=None,outputpath=None):
              linewidth=2,markeredgewidth=2, fillstyle='none', markersize=marker_size, label='$ϵ$=0.6')
     plt.plot(data['payload_size'], data['0.7'], color='pink', marker='.', linestyle='--',
              linewidth=2,markeredgewidth=2, fillstyle='none', markersize=marker_size, label='$ϵ$=0.7')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     # plt.ylim(0,1)
@@ -159,7 +159,7 @@ def different_input_size(data=None, outputpath=None):
              markeredgewidth=2, fillstyle='none', markersize=marker_size, label='$d$=204800')
     plt.plot(data['payload_size'], data['409600'], color='orange', marker='+', linestyle='--', linewidth=2,
              markeredgewidth=2, fillstyle='none', markersize=marker_size, label='$d$=409600')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     # plt.ylim(0,1)
@@ -195,8 +195,8 @@ def time_overhead(data=None, outputpath=None):
     plt.bar(br3,data['three'],color='orange',width=BarWidth,label='Three Malware Detectors')
 
     ## add Xticks
-    plt.xlabel('Payload Size', fontsize=font_size)
-    plt.ylabel('Time Overhead (second/sample)', fontsize=font_size)
+    plt.xlabel('Crafted Byte Ratio', fontsize=font_size)
+    plt.ylabel('Generation Time (second/sample)', fontsize=font_size)
     plt.xticks([r + BarWidth for r in range(len(data['payload_size']))],
                ['0.5%', '1%', '2%', '4%', '8%','16%','32%'])
     plt.tick_params(labelsize=font_size)
@@ -231,8 +231,8 @@ def time_overhead_different_adversary(data=None, outputpath=None):
     plt.bar(br3,data['PGD'],color='orange',width=BarWidth,label='PGD')
 
     ## add Xticks
-    plt.xlabel('Payload Size', fontsize=font_size)
-    plt.ylabel('Time Overhead (second/sample)', fontsize=font_size)
+    plt.xlabel('Crafted Byte Ratio', fontsize=font_size)
+    plt.ylabel('Generation Time (second/sample)', fontsize=font_size)
     plt.xticks([r + BarWidth for r in range(len(data['payload_size']))],
                ['0.5%', '1%', '2%', '4%', '8%','16%','32%'])
     plt.tick_params(labelsize=font_size)
@@ -257,10 +257,10 @@ def different_dataset(data=None, outputpath=None):
 
     plt.figure(figsize=(8, 6), dpi=150)
     plt.plot(data['payload_size'], data['self-collected'], color='red', marker='*', linestyle='--', linewidth=2,
-             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='self-collected')
+             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='ME')
     plt.plot(data['payload_size'], data['phd'], color='blue', marker='^', linestyle='--', linewidth=2,
              markeredgewidth=2, fillstyle='none', markersize=marker_size, label='phd')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     plt.ylim(0,1.1)
@@ -290,7 +290,7 @@ def different_adversary(data=None, outputpath=None):
              markeredgewidth=2, fillstyle='none', markersize=marker_size, label='PGD')
     plt.plot(data['payload_size'], data['FFGSM'], color='orange', marker='+', linestyle='--', linewidth=2,
              markeredgewidth=2, fillstyle='none', markersize=marker_size, label='FFGSM')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     plt.ylim(0,1.1)
@@ -315,17 +315,17 @@ def evasion_performance(data=None, outputpath=None):
 
     plt.figure(figsize=(8, 6), dpi=150)
     plt.plot(data['payload_size'], data['two_detectors_raw_bytes'], color='red', marker='*', linestyle='--', linewidth=2,
-             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='raw bytes')
+             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='MalConv and FireEyeNet')
     plt.plot(data['payload_size'], data['two_detectors_different_input_format'], color='blue', marker='^', linestyle='--', linewidth=2,
-             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='raw bytes and image')
+             markeredgewidth=2, fillstyle='none', markersize=marker_size, label='MalConv and ResNet18')
     # plt.plot(data['payload_size'], data['three_detectors'], color='orange', marker='+', linestyle='--', linewidth=2,
     #          markeredgewidth=2, fillstyle='none', markersize=marker_size, label='Three Malware Detectors (raw bytes)')
-    plt.xlabel('Payload Size', {'size': font_size})
+    plt.xlabel('Crafted Byte Ratio', {'size': font_size})
     plt.ylabel('Evasion Rate', {'size': font_size})
     plt.xticks(data['payload_size'])
     plt.ylim(0, 1.1)
     plt.tick_params(labelsize=font_size)
-    plt.legend(loc='best', fontsize=font_size)
+    plt.legend(loc='lower right', fontsize=font_size)
     plt.savefig(outputpath + 'evasion_performance.eps')
     plt.show()
 

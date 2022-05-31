@@ -113,7 +113,7 @@ class FGSM(object):
         "map pert to 0-256"
         pert = self.reconstruction(torch.Tensor(pert).to(self.device), m).detach().numpy()
         "clamp pert to 0-256"
-        pert = torch.clamp(pert,0,256)
+        pert = torch.clamp(torch.tensor(pert).to(self.device),0,256).detach().cpu().numpy()
         X_sqz = X.squeeze()
         adv_x = np.concatenate([X_sqz.detach().numpy()[:-self.payload_size], pert.astype(np.uint8)])
         # add dimension
