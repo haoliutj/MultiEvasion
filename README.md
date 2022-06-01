@@ -50,7 +50,9 @@ python3 train_models.py --model_name=malconv --input_size=102400 --window_size=5
 ```
 
 ### Train image based malware detector, ResNet18
-```python3 train_image_malware_detector.py --epochs=50 --batch_size=128 --model_name=ResNet18 --lr=0.001 --image_resolution=320 --adjust_lr_flag=False --image_path=../data/all_image/ --model_save_path=../checkpoint/model_image_.pth --log_file_name=../result/model_training/log_image_.txt --train_label_table_path=../data/train_data_label.csv --test_label_table_path=../data/test_data_label.csv --val_label_table_path=../data/val_data_label.csv```
+```
+python3 train_image_malware_detector.py --epochs=50 --batch_size=128 --model_name=ResNet18 --lr=0.001 --image_resolution=320 --adjust_lr_flag=False --image_path=../data/all_image/ --model_save_path=../checkpoint/model_image_.pth --log_file_name=../result/model_training/log_image_.txt --train_label_table_path=../data/train_data_label.csv --test_label_table_path=../data/test_data_label.csv --val_label_table_path=../data/val_data_label.csv
+```
 
 ##### Parameters
 ```
@@ -100,49 +102,79 @@ python3 adv_attack_against_detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 
 ##### How to select function manipulations, please follow the below parameter combinations to choose function manipulations
 
 Partial DOS:
-```--partial_dos=True --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
+```
+--partial_dos=True --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+```
 
 Content Shift: 
-```--partial_dos=False --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
+```
+--partial_dos=False --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+```
 
 Slack: 
-```--partial_dos=False --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
+```
+--partial_dos=False --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+```
 
 Partial DOS + Content Shift: 
-```--partial_dos=True --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
+```
+--partial_dos=True --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+```
 
 Partial DOS + Slack:
-```--partial_dos=True --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
+```
+--partial_dos=True --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+```
 
 Content Shift + Slack: 
-```--partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
+```
+--partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+```
 
 Partial DOS + Content Shift + Slack:
-```--partial_dos=True --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
+```
+--partial_dos=True --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+```
 
 Full DOS: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+```
 
 Extension: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=0```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=0
+```
 
 Full DOS + Content Shift: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+```
 
 Full DOS + Slack: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=0```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=0
+```
 
 Extension + Content Shift: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=512```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=512
+```
 
 Extension + Slack: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=32768 --preferable_shift_amount=0```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=32768 --preferable_shift_amount=0
+```
 
 Full DOS + Content Shift + Slack: 
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=32768```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=32768
+```
 
 Extension + Content Shift + Slack:
-```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=512 --preferable_shift_amount=512```
+```
+--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=512 --preferable_shift_amount=512
+```
 
 
 ### Evaluation of MultiEvasion against three malware detectors (MalConv, FireEyeNet and AvastNet) at the same time
