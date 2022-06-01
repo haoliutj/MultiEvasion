@@ -181,7 +181,7 @@ Extension + Content Shift + Slack:
 ### Evaluation of MultiEvasion against three malware detectors (MalConv, FireEyeNet and AvastNet) at the same time
 #### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
 ```
-python3 adv_attack_against_3detectors.py --adversary=FGSM  --eps=0.9 --alpha=0.7 --iter_steps=20 --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --log_file_for_result=../result/same_input_format_3detectors/fgsm_0.9/result_file.txt --preferable_extension_amount=0 --preferable_shift_amount=4096 --test_data_path=../data/all_file/ --test_label_path=../data/test_mal_label.csv --model_path_1=../checkpoint/malconv_model.pth --model_path_2=../checkpoint/fireeye_model.pth --model_path_3=../checkpoint/AvastNet_model.pth --use_cpu=1 --batch_size=1 --first_n_byte=102400 --window_size=500
+python3 adv_attack_against_3detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 --iter_steps=20 --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --log_file_for_result=../result/same_input_format_3detectors/fgsm_0.9/result_file.txt --preferable_extension_amount=0 --preferable_shift_amount=4096 --test_data_path=../data/all_file/ --test_label_path=../data/test_mal_label.csv --model_path_1=../checkpoint/malconv_model.pth --model_path_2=../checkpoint/fireeye_model.pth --model_path_3=../checkpoint/AvastNet_model.pth --use_cpu=1 --batch_size=1 --first_n_byte=102400 --window_size=500
 ```
 
 #### Parameters:
