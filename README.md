@@ -31,7 +31,7 @@ Please see the details of parameters in each script.
 python3 train_models.py --model_name=malconv --input_size=102400 --window_size=500 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_102400/train_log.txt --checkpoint_dir=../checkpoint/inputsize_102400/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/
 ```
 
-##### Parameters:
+#### Parameters:
 ```
 --model_name: name of the model, include "malconv", "fireeye" and "AvastNet"
 --input_size: input size of models
@@ -53,7 +53,7 @@ python3 train_models.py --model_name=malconv --input_size=102400 --window_size=5
 python3 train_image_malware_detector.py --epochs=50 --batch_size=128 --model_name=ResNet18 --lr=0.001 --image_resolution=320 --adjust_lr_flag=False --image_path=../data/all_image/ --model_save_path=../checkpoint/model_image_.pth --log_file_name=../result/model_training/log_image_.txt --train_label_table_path=../data/train_data_label.csv --test_label_table_path=../data/test_data_label.csv --val_label_table_path=../data/val_data_label.csv
 ```
 
-##### Parameters:
+#### Parameters:
 ```
 --epochs: number of epochs
 --batch_size: batch size
@@ -71,13 +71,13 @@ python3 train_image_malware_detector.py --epochs=50 --batch_size=128 --model_nam
 
 ### Evaluation of MultiEvasion against two malware detectors (MalConv and FireEyeNet) at the same time
 
-##### FGSM as adversarial example algorithm, Content Shift and Slack as function manipulations:
+#### FGSM as adversarial example algorithm, Content Shift and Slack as function manipulations:
 ```
 python3 adv_attack_against_detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 --iter_steps=20 --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --log_file_for_result=../result/same_input_format/fgsm_0.4/result_file.txt --preferable_extension_amount=0 --preferable_shift_amount=4096 --test_data_path=../data/all_file/ --test_label_path=../data/test_mal_label.csv --model_path_1=../checkpoint/malconv_model.pth --model_path_2=../checkpoint/fireeye_model.pth --use_cpu=1 --batch_size=1 --first_n_byte=102400 --window_size=500
 
 ```
 
-##### Parameters:
+#### Parameters:
 ```
 --adversary: name of adversary, include "FGSM", "FFGSM" and "PGD"
 --eps: control the perturbation size, range [0,1]
@@ -100,7 +100,7 @@ python3 adv_attack_against_detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 
 --window_size: the stride size of models
 ```
 
-##### How to select function manipulations, please follow the below parameter combinations to choose function manipulations
+#### How to select function manipulations, please follow the below parameter combinations to choose function manipulations
 
 Partial DOS:
 ```
@@ -179,23 +179,23 @@ Extension + Content Shift + Slack:
 
 
 ### Evaluation of MultiEvasion against three malware detectors (MalConv, FireEyeNet and AvastNet) at the same time
-##### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
+#### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
 ```
 python3 adv_attack_against_3detectors.py --adversary=FGSM  --eps=0.9 --alpha=0.7 --iter_steps=20 --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --log_file_for_result=../result/same_input_format_3detectors/fgsm_0.9/result_file.txt --preferable_extension_amount=0 --preferable_shift_amount=4096 --test_data_path=../data/all_file/ --test_label_path=../data/test_mal_label.csv --model_path_1=../checkpoint/malconv_model.pth --model_path_2=../checkpoint/fireeye_model.pth --model_path_3=../checkpoint/AvastNet_model.pth --use_cpu=1 --batch_size=1 --first_n_byte=102400 --window_size=500
 ```
 
-##### Parameters:
+#### Parameters:
 The parameters decriptions same as above.
 
 
 ### Evaluation of MultiEvasion against two malware detectors with different input formats(MalConv and ResNet18) at the same time
-##### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
+#### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
 ```
 python3 adv_attack_against_detectors_different_input.py --adversary=FGSM  --eps=0.4 --alpha=0.7 --iter_steps=20 --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --log_file_for_result=../result/different_input/fgsm0.4/result_file.txt --preferable_extension_amount=0 --preferable_shift_amount=4096 --width=320 --height=320 --test_data_path=../data/all_file/ --test_label_path=../data/test_mal_label.csv --model_path_1=../checkpoint/malconv_model.pth --model_path_2=../checkpoint/ResNet18.pth --use_cpu=1 --batch_size=1 --first_n_byte=102400 --window_size=500
 
 ```
 
-##### Parameters:
+#### Parameters:
 The most parameters decriptions same as above.
 ```
 --width: width value of image. Default is 320.
