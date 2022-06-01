@@ -28,7 +28,9 @@ We evaluated our method over two datasets. One is public dataset, named phd data
 Please see the details of parameters in each script.
 
 ### Train malware detectors and get evaluation results (e.g. train malconv)
-```python3 train_models.py --model_name=malconv --input_size=102400 --window_size=500 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_102400/train_log.txt --checkpoint_dir=../checkpoint/inputsize_102400/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/```
+```
+python3 train_models.py --model_name=malconv --input_size=102400 --window_size=500 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_102400/train_log.txt --checkpoint_dir=../checkpoint/inputsize_102400/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/
+```
 
 ##### Parameters
 ```
