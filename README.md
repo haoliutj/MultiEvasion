@@ -60,6 +60,8 @@ python3 train_image_malware_detector.py --epochs=50 --batch_size=128 --model_nam
 --model_name: model name, default is ResNet18
 --lr: learning rate
 --image_resolution: the size of width (or height). height is equal to width here
+--model_save_path: path to save trained model
+--log_file_path: file path to save the results
 --adjust_lr_flag: bool value, whether adjusting learning rate during training process
 --image_path: folder path that includes all grayscale images of all benign and malicious pe programs
 --train_label_path: csv file that includes file names and the corresponding labels of training data
