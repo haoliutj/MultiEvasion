@@ -1,7 +1,6 @@
 # MultiEvasion
 
-This repository contains the implementation of our paper "AdvTraffic: Obfuscating Encrypted Traffic with
-Adversarial Examples".  In this paper, we proposed evasion attacks "MultiEvasion" that can evade multiple malware detectors. We leveraged different adversarial example generation methods, like FGSM, FFGSM, PGD, which orginally introduced in image domain, we customized them to apply on obfuscating malware programs.
+This repository contains the implementation of our paper "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors".  In this paper, we proposed evasion attacks "MultiEvasion" that can evade multiple malware detectors. We leveraged different adversarial example generation methods, like FGSM, FFGSM, PGD, which orginally introduced in image domain, we customized them to apply on obfuscating malware programs.
 
 ** The data set and code for research purpose only**
 
@@ -204,8 +203,7 @@ The most parameters decriptions same as above.
 ## Citation
 When reporting results that use the dataset or code in this repository, please cite:
 
-Hao Liu, Wenhai Sun, Nai Niu, Boyang Wang, "AdvTraffic: Obfuscating Encrypted Traffic with
-Adversarial Examples" (under review)
+Hao Liu, Wenhai Sun, Nai Niu, Boyang Wang, "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors" (under review)
 
 ## Contacts
 Hao Liu, liu3ho@mail.uc.edu
