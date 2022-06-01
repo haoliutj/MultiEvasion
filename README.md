@@ -203,7 +203,7 @@ The most parameters decriptions same as above.
 ## Citation
 When reporting results that use the dataset or code in this repository, please cite:
 
-Hao Liu, Wenhai Sun, Nai Niu, Boyang Wang, "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors" (under review)
+Hao Liu, Wenhai Sun, Nan Niu, Boyang Wang, "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors" (under review)
 
 ## Contacts
 Hao Liu, liu3ho@mail.uc.edu
