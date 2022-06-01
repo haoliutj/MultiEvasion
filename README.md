@@ -96,37 +96,52 @@ python3 adv_attack_against_detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 
 ```
 
 ##### How to select function manipulations, please follow the below parameter combinations to choose function manipulations
-```
-Partial DOS: --partial_dos=True --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
 
-Content Shift: --partial_dos=False --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+Partial DOS:
+```--partial_dos=True --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
 
-Slack: --partial_dos=False --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+Content Shift: 
+```--partial_dos=False --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
 
-Partial DOS + Content Shift: --partial_dos=True --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+Slack: 
+```--partial_dos=False --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
 
-Partial DOS + Slack: --partial_dos=True --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+Partial DOS + Content Shift: 
+```--partial_dos=True --content_shift=True --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
 
-Content Shift + Slack: --partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+Partial DOS + Slack:
+```--partial_dos=True --content_shift=False --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
 
-Partial DOS + Content Shift + Slack: --partial_dos=True --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+Content Shift + Slack: 
+```--partial_dos=False --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
 
-Full DOS: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0
+Partial DOS + Content Shift + Slack:
+```--partial_dos=True --content_shift=True --slack=True --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
 
-Extension: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=0
+Full DOS: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=0```
 
-Full DOS + Content Shift: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512
+Extension: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=0```
 
-Full DOS + Slack: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=0
+Full DOS + Content Shift: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=0 --preferable_shift_amount=512```
 
-Extension + Content Shift: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=512
+Full DOS + Slack: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=0```
 
-Extension + Slack: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=32768 --preferable_shift_amount=0
+Extension + Content Shift: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=False --preferable_extension_amount=512 --preferable_shift_amount=512```
 
-Full DOS + Content Shift + Slack: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=32768
+Extension + Slack: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=32768 --preferable_shift_amount=0```
 
-Extension + Content Shift + Slack: --partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=512 --preferable_shift_amount=512
-```
+Full DOS + Content Shift + Slack: 
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=0 --preferable_shift_amount=32768```
+
+Extension + Content Shift + Slack:
+```--partial_dos=False --content_shift=False --slack=False --combine_w_slack=True --preferable_extension_amount=512 --preferable_shift_amount=512```
+
 
 ### Evaluation of MultiEvasion against three malware detectors (MalConv, FireEyeNet and AvastNet) at the same time
 ##### FGSM as adversarial example algorithm, Content shift and slack as function manipulation:
