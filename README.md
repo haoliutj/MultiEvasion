@@ -31,8 +31,19 @@ Please see the details of parameters in each script.
 ```python3 train_models.py --model_name=malconv --input_size=102400 --window_size=500 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_102400/train_log.txt --checkpoint_dir=../checkpoint/inputsize_102400/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/```
 
 ```
-model_name: name of the model, include "malconv", "fireeye" and "AvastNet".
-
+model_name: name of the model, include "malconv", "fireeye" and "AvastNet"
+input_size: input size of models
+window_size: stride size 
+batch_size: batch size
+epochs: number of epochs to train models
+lr: learning rate
+num_workers: number of workers to load data
+log_file_path: file path to save the results
+checkpoint_dir: parent folder path to save model or load model
+train_label_path: csv file that includes file names and the corresponding labels of training data
+test_label_path: csv file that includes file names and the corresponding labels of testing data
+val_label_path: csv file that includes file names and the corresponding labels of validation data
+all_file_path: folder path that includes all files (pe programs), which include both benign and malcious pe programs
 ```
 
 #### Train image based malware detector, ResNet18
