@@ -32,19 +32,19 @@ Please see the details of parameters in each script.
 
 ##### Parameters
 ```
-model_name: name of the model, include "malconv", "fireeye" and "AvastNet"
-input_size: input size of models
-window_size: stride size 
-batch_size: batch size
-epochs: number of epochs to train models
-lr: learning rate
-num_workers: number of workers to load data
-log_file_path: file path to save the results
-checkpoint_dir: parent folder path to save model or load model
-train_label_path: csv file that includes file names and the corresponding labels of training data
-test_label_path: csv file that includes file names and the corresponding labels of testing data
-val_label_path: csv file that includes file names and the corresponding labels of validation data
-all_file_path: folder path that includes all files (pe programs), which include both benign and malcious pe programs
+--model_name: name of the model, include "malconv", "fireeye" and "AvastNet"
+--input_size: input size of models
+--window_size: stride size 
+--batch_size: batch size
+--epochs: number of epochs to train models
+--lr: learning rate
+--num_workers: number of workers to load data
+--log_file_path: file path to save the results
+--checkpoint_dir: parent folder path to save model or load model
+--train_label_path: csv file that includes file names and the corresponding labels of training data
+--test_label_path: csv file that includes file names and the corresponding labels of testing data
+--val_label_path: csv file that includes file names and the corresponding labels of validation data
+--all_file_path: folder path that includes all files (pe programs), which include both benign and malcious pe programs
 ```
 
 ### Train image based malware detector, ResNet18
