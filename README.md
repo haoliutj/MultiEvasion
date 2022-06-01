@@ -1,6 +1,6 @@
 # MultiEvasion
 
-This repository contains the implementation of our paper "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors".  In this paper, we proposed evasion attacks "MultiEvasion" that can evade multiple malware detectors. We leveraged different adversarial example generation methods, like FGSM, FFGSM, PGD, which orginally introduced in image domain, we customized them to apply on obfuscating malware programs.
+This repository contains the implementation of our paper "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors".  In this paper, we proposed evasion attacks "MultiEvasion" that can evade multiple DNNs based malware detectors. We leveraged different adversarial example generation methods, like FGSM, FFGSM, PGD, which orginally introduced in image domain, we customized them to apply on obfuscating malware programs.
 
 ** The data set and code for research purpose only**
 
