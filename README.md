@@ -30,6 +30,11 @@ Please see the details of parameters in each script.
 #### Train malware detectors and get evaluation results (saved at "log_file_path") (e.g. train malconv)
 ```python3 train_models.py --model_name=malconv --input_size=102400 --window_size=500 --batch_size=32 --epochs=50 --lr=0.0001 --num_workers=1 --log_file_path=../result/inputsize_102400/train_log.txt --checkpoint_dir=../checkpoint/inputsize_102400/ --train_label_path=../data/train_data_label.csv --test_label_path=../data/test_data_label.csv --val_label_path=../data/val_data_label.csv --all_file_path=../data/all_file/```
 
+```
+model_name: name of the model, include "malconv", "fireeye" and "AvastNet".
+
+```
+
 #### Train image based malware detector, ResNet18
 ```python train_image_malware_detector.py --epochs=50 --batch_size=128 --model_name=ResNet18 --lr=0.001 --image_resolution=320 --adjust_lr_flag=False --image_path=../data/all_image/ --model_save_path=../checkpoint/model_image_.pth --log_file_name=../result/model_training/log_image_.txt --train_label_table_path=../data/train_data_label.csv --test_label_table_path=../data/test_data_label.csv --val_label_table_path=../data/val_data_label.csv```
 
