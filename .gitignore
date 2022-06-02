@@ -23,6 +23,12 @@ validate_*.py
 white_box_*.py
 train_secml_*.py
 train_malconv*.py
+
+## inlcude files and folders
+!/data/all_file/**
+!/data/test_data_label.csv
+!/data/train_data_label.csv
+!/data/val_data_label.csv
 train_fireeye.py
 trian_avastnet.py
 test_secml*.py
