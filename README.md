@@ -100,7 +100,7 @@ python3 adv_attack_against_detectors.py --adversary=FGSM  --eps=0.4 --alpha=0.7 
 --window_size: the stride size of models
 ```
 
-#### How to select function manipulations, please follow the below parameter combinations to choose function manipulations
+#### How to select function manipulations, please follow the below parameter combinations to choose function manipulations (preferable_extension_amount and preferable_shift_amount can be altered to other value of multiple of 512 when they are not 0)
 
 Partial DOS:
 ```
