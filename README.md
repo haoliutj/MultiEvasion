@@ -24,7 +24,7 @@ We evaluated our method over two datasets.
 
 * One is public dataset, named phd dataset, contains 977 benign PE programs and 2597 malicious PE programs. You can access the dataset through "https://github.com/tgrzinic/phd-dataset".
 
-* The other one is collected by us, named ME dataset, contains 1192 benign PE programs across multiple Windows versions (e.g., Windows XP, Vista, 8 and 10) in total, we randomly selected 1000 for all experiments in this paper, and 1000 malicious PE programs downloaded from VirusShare. You can access the download link through https://mailuc-my.sharepoint.com/:f:/g/personal/liu3ho_mail_uc_edu/Evbpfh-gwc9EnBHB9c1ysVIBfgfvOhScnRsfTyfhHOCdPw?e=2dajBM. Please contact us to renew the link if the current link expired. 
+* The other one is collected by us, named ME dataset, contains 1192 benign PE programs across multiple Windows versions (e.g., Windows XP, Vista, 8 and 10) in total, we randomly selected 1000 for all experiments in this paper, and 1000 malicious PE programs downloaded from VirusShare. You can access the download link through https://mailuc-my.sharepoint.com/:f:/g/personal/liu3ho_mail_uc_edu/Evbpfh-gwc9EnBHB9c1ysVIBfgfvOhScnRsfTyfhHOCdPw?e=2dajBM. Please contact us to renew the link if the current link expired.
 
 
 ## Usage
@@ -209,7 +209,7 @@ The most parameters decriptions same as above.
 ## Citation
 When reporting results that use the dataset or code in this repository, please cite:
 
-Hao Liu, Wenhai Sun, Nan Niu, Boyang Wang, "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors" (under review)
+Hao Liu, Wenhai Sun, Nan Niu, Boyang Wang, "MultiEvasion: Evasion Attacks Against Multiple Malware Detectors" by IEEE CNS 2022, Austin, TX, USA, 3-5 October 2022
 
 ## Contacts
 Hao Liu, liu3ho@mail.uc.edu
